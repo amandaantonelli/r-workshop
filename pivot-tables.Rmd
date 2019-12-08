@@ -112,7 +112,8 @@ ggplot(data = median_summary, aes(x = year, y = median_size_mm, color = site)) +
   theme_minimal() +
   facet_wrap(~ site)
 
-ggsave("lobster_median_graph.png", dpi = 180, width = 8, height = 7)
+# I created a figures folder from the RStudio files pane in order to be organized and for this code to run
 
+ggsave(here("figures/lobster_median_graph.png"))
 ```
 
