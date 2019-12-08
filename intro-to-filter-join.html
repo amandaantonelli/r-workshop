@@ -481,7 +481,7 @@ fish_3sp_v2 &lt;- fish_counts %&gt;%
   mutate(year = as.numeric(year))</code></pre>
 <pre class="r"><code>abur_kelp_join &lt;- fish_2016_2017 %&gt;% 
   full_join(kelp_counts_abur, by = c(&quot;year&quot;, &quot;site&quot;))</code></pre>
-<p>Save ggplot</p>
+<p>Save ggplot graph</p>
 <pre class="r"><code>ggplot(abur_kelp_join, aes(x = year, y = total_count)) +
   geom_col(aes(fill = site), position = &quot;dodge&quot;)</code></pre>
 <pre><code>## Warning: Removed 1 rows containing missing values (geom_col).</code></pre>

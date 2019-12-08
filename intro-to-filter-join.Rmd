@@ -142,7 +142,7 @@ abur_kelp_join <- fish_2016_2017 %>%
   full_join(kelp_counts_abur, by = c("year", "site"))
 ```
 
-Save ggplot
+Save ggplot graph
 
 ```{r}
 ggplot(abur_kelp_join, aes(x = year, y = total_count)) +
